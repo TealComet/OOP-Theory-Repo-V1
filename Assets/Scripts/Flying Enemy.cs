@@ -1,6 +1,7 @@
 using System; // Necessary to use Math.PI
 using UnityEngine;
 
+// INHERITANCE
 public class FlyingEnemy : Enemy
 {
     // f(x) = a * sin(d(x + h)) + m
@@ -62,6 +63,7 @@ public class FlyingEnemy : Enemy
     }
 
     // Move Method
+    // POLYMORPHISM
     protected override void Move()
     {
         // xPos self decrements

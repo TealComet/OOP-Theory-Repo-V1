@@ -14,6 +14,7 @@ public class LevelManager : MonoBehaviour
     public bool isGameStopped;
 
     // Initial Time Value
+    // ENCAPSULATION
     protected float initTime {get; private set;}
 
     // Current Time Value
@@ -118,6 +119,7 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // ABSTRACTION
         Stop();
         TimeDown();
         BackToTitle();

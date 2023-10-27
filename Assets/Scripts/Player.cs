@@ -1,6 +1,8 @@
 using UnityEngine;
 using TMPro;
 
+// Link to my repository : https://github.com/TealComet/OOP-Theory-Repo-V1
+
 public class Player : MonoBehaviour
 {
     // LevelManager Script
@@ -83,6 +85,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // ABSTRACTION
         Move();
         Jump();
         ResetYPosition();

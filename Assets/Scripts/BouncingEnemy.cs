@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// INHERITANCE
 public class BouncingEnemy : Enemy
 {
     // Ground state
@@ -22,6 +23,7 @@ public class BouncingEnemy : Enemy
     }
 
     // Move Method
+    // POLYMORPHISM
     protected override void Move()
     {
         // Rectangle's movement : bounce to the left , as long as the game is not stopped and the enemy is not defeated
