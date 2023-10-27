@@ -161,8 +161,6 @@ public class Player : MonoBehaviour
 
             // Switch isHit
             isHit = true;
-
-            Debug.Log($"isHit = {isHit}.");
         }
 
         // Else if the player collides with an enemy and the player is above enemy, the player bounces up and their score value is increased
@@ -216,20 +214,17 @@ public class Player : MonoBehaviour
         if(isHit && invulnerableTimer > 0)
         {
             invulnerableTimer--;
-            Debug.Log($"invulnerableTimer = {invulnerableTimer}.");
 
             // If invulnerableTimer is even, the player is visible
             if(invulnerableTimer % 2 == 0)
             {
                 playerRend.enabled = true;
-                Debug.Log($"playerRend.enabled = {playerRend.enabled}.");
             }
 
             // If invulnerableTimer is not even, the player is invisible
             else
             {
                playerRend.enabled = false; 
-               Debug.Log($"playerRend.enabled = {playerRend.enabled}.");
             }
         }
 
@@ -237,10 +232,7 @@ public class Player : MonoBehaviour
         else if(invulnerableTimer <= 0)
         {
             isHit = false;
-            Debug.Log($"isHit = {isHit}.");
-
             invulnerableTimer = 200;
-            Debug.Log($"invulnerableTimer = {invulnerableTimer}.");
         }
     }
 
